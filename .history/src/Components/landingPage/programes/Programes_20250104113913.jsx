@@ -80,8 +80,16 @@ const Programes = () => {
           </p>
           <div className="bg-teal-300 h-3 md:h-4 w-[35%] md:w-[8.5%] relative left-10 md:left-20 bottom-3 -z-10 rounded-sm"></div>
         </div>
-        <div className="flex flex-col text-center justify-center items-center gap-5 w-full md:w-[80%] mx-auto">
-          <p className="text-base text-gray-500">
+        <div className="flex flex-col md:flex-row gap-5 w-full md:w-[80%] mx-auto">
+          <p className="text-base text-gray-500 w-full md:w-1/2">
+            Our program is designed to empower students with essential knowledge
+            and skills for a healthier life. It covers vital subjects such as
+            health education, nutrition education, health seminars, counseling,
+            and medical & nutrition screenings. We believe that education and
+            counseling play a key role in promoting well-being and fostering a
+            culture of wellness in schools.
+          </p>
+          <p className="text-base text-gray-500 w-full md:w-1/2">
             At SSI, we understand that each school community is unique, and
             individual needs vary. Our Health Education, Training, and Medical
             and Nutrition Screening services are designed to be flexible and
@@ -89,11 +97,11 @@ const Programes = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 w-full mx-auto items-center justify-center px-6 md:px-8 lg:px-24 my-8 md:my-20">
+        <div className="flex flex-col md:flex-row gap-8 w-full mx-auto items-center justify-center">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="h-[350px] w-full overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 group"
+              className="h-[350px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 group"
               style={{
                 backgroundImage: `url(${plan.image})`,
                 backgroundSize: "cover",
@@ -111,8 +119,8 @@ const Programes = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-0 bg-slate-800 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
-                <ul className="mb-4 space-y-1 text-center w-[85%]">
+              <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
+                <ul className="mb-6 space-y-2 text-center">
                   {plan.features.map((feature, i) => (
                     <li key={i}>{feature}</li>
                   ))}

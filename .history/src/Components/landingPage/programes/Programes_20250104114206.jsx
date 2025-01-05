@@ -111,8 +111,8 @@ const Programes = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-0 bg-slate-800 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
-                <ul className="mb-4 space-y-1 text-center w-[85%]">
+              <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
+                <ul className="mb-6 space-y-2 text-center">
                   {plan.features.map((feature, i) => (
                     <li key={i}>{feature}</li>
                   ))}

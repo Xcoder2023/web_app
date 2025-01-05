@@ -1,4 +1,5 @@
-import { useState } from "react";
+// Programes.jsx
+import React, { useState } from "react";
 import Modal from "../../../common/Modals";
 
 const plans = [
@@ -38,7 +39,7 @@ const plans = [
       "Access to Annual School Health Fairs",
       "Access to Termly Psychological Counseling Sessions",
     ],
-    image: "/assets/eduPromotion.jpg",
+    imagse: "/assets/eduPromotion.jpg",
   },
   // {
   //   title: "Premium",
@@ -59,8 +60,7 @@ const Programes = () => {
   const [isSubscribeModalOpen, setSubscribeModalOpen] = useState(false);
   const [isSuccessModalOpen, setSuccessModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
-
-  const handleSubscribeClick = (plan) => {
+ew-ruiop  const handleSubscribeClick = (plan) => {
     setSelectedPlan(plan);
     setSubscribeModalOpen(true);
   };
@@ -80,8 +80,16 @@ const Programes = () => {
           </p>
           <div className="bg-teal-300 h-3 md:h-4 w-[35%] md:w-[8.5%] relative left-10 md:left-20 bottom-3 -z-10 rounded-sm"></div>
         </div>
-        <div className="flex flex-col text-center justify-center items-center gap-5 w-full md:w-[80%] mx-auto">
+        <div className="flex flex-col md:flex-row qgap-5 w-[80%] mx-auto text-base md:text-xl text-gray-700">
           <p className="text-base text-gray-500">
+            Our program is designed to empower students with essential knowledge
+            and skills for a healthier life. It covers vital subjects such as
+            health education, nutrition education, health seminars, counseling,
+            and medical & nutrition screenings. We believe that education and
+            counseling play a key role in promoting well-being and fostering a
+            culture of wellness in schools.
+          </p>
+          <p>
             At SSI, we understand that each school community is unique, and
             individual needs vary. Our Health Education, Training, and Medical
             and Nutrition Screening services are designed to be flexible and
@@ -89,48 +97,50 @@ const Programes = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 w-full mx-auto items-center justify-center px-6 md:px-8 lg:px-24 my-8 md:my-20">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className="h-[350px] w-full overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 group"
-              style={{
-                backgroundImage: `url(${plan.image})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="bg-teal-500 w-full flex justify-between text-[24px] px-5 text-white">
-                <p>{plan.title}</p>
-                <div>
-                  <p>&#8358;{plan.cost}</p>
-                  <div className="flex text-end justify-end">
-                    <p className="text-[12px] text-[red] line-through">
-                      &#8358;{plan.initialCost}
+        <div className="flex flex-wrap justify-center py-8">
+          <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-2 gap-8">
+            {plans.map((plan, index) => (
+              <div
+                key={index}
+                className="h-[350px] w-[19rem] md:w-[350px] lg:w-[600px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 group"
+                style={{
+                  backgroundImage: `url(${plan.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="bg-teal-500 w-full flex justify-between text-[24px] px-5 text-white">
+                  <p>{plan.title}</p>
+                  <div>
+                    <p>&#8358;{plan.cost}</p>
+                    <div className="flex text-end justify-end">
+                      <p className="text-[12px] text-[red] line-through">
+                        &#8358;{plan.initialCost}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
+                  <ul className="mb-6 space-y-2 text-center">
+                    {plan.features.map((feature, i) => (
+                      <li key={i}>{feature}</li>
+                    ))}
+                  </ul>
+                  <button
+                    onClick={() => handleSubscribeClick(plan)} // Pass the plan to handleSubscribeClick
+                    className="px-4 py-2 bg-teal-500 hover:bg-teal-600 rounded-full text-white font-semibold transition-colors duration-200"
+                  >
+                    Subscribe
+                  </button>
+                  <div className="flex justify-end w-full text-[24px] -mb-[15%] hover:text-black">
+                    <p className="bg-teal-500 rounded-tl-md px-1">
+                      {plan.comment}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-0 bg-slate-800 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
-                <ul className="mb-4 space-y-1 text-center w-[85%]">
-                  {plan.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-                <button
-                  onClick={() => handleSubscribeClick(plan)} // Pass the plan to handleSubscribeClick
-                  className="px-4 py-2 bg-teal-500 hover:bg-teal-600 rounded-full text-white font-semibold transition-colors duration-200"
-                >
-                  Subscribe
-                </button>
-                <div className="flex justify-end w-full text-[24px] -mb-[15%] hover:text-black">
-                  <p className="bg-teal-500 rounded-tl-md px-1">
-                    {plan.comment}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 
