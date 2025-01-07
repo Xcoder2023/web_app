@@ -7,7 +7,7 @@ const plans = [
     initialCost: "140,000",
     cost: "100,000",
     features: [
-      "Setting/Inspection of School Healingbay and First Aid Box.",
+      "Setting/Inspection of School Healing baby and First Aid Box.",
       "Health talk/Health Education and Promotion.",
       "Training of School Staff and Health prefects.",
       "Distribution of I.E.C materials.",
@@ -55,7 +55,7 @@ const plans = [
   // },
 ];
 
-const Programes = () => {
+const Programmes = () => {
   const [isSubscribeModalOpen, setSubscribeModalOpen] = useState(false);
   const [isSuccessModalOpen, setSuccessModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -73,15 +73,15 @@ const Programes = () => {
 
   return (
     <>
-      <div>
-        <div className="flex flex-col justify-center items-center text-center font-bold text-[24px]/[28px] xl:text-[48px]/[64px] pb-4">
-          <p className="text-center font-bold text-2xl xl:text-4xl">
+      <div className="md:my-10 md:pb-10 px-4 md:px-6 lg:px-20 w-full">
+        <div className="flex flex-col justify-center items-center text-center font-bold text-[24px]/[28px] xl:text-[48px]/[64px] py-4">
+          <p className="text-center font-bold text-3xl xl:text-4xl">
             Our Programmes
           </p>
-          <div className="bg-teal-300 h-3 md:h-4 w-[35%] md:w-[8.5%] relative left-10 md:left-20 bottom-3 -z-10 rounded-sm"></div>
+          <div className="bg-teal-300 h-3 md:h-4 w-[35%] md:w-[8.5%] relative left-16 md:left-20 bottom-3 -z-10 rounded-sm"></div>
         </div>
         <div className="flex flex-col text-center justify-center items-center gap-5 w-full md:w-[80%] mx-auto">
-          <p className="text-base text-gray-500">
+          <p className="text-base text-gray-600 w-[95%] md:w-[75%]">
             At SSI, we understand that each school community is unique, and
             individual needs vary. Our Health Education, Training, and Medical
             and Nutrition Screening services are designed to be flexible and
@@ -89,7 +89,7 @@ const Programes = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 w-full mx-auto items-center justify-center px-6 md:px-8 lg:px-24 my-8 md:my-20">
+        <div className="flex flex-col md:flex-row gap-8 w-full mx-auto items-center justify-center my-8 md:my-20">
           {plans.map((plan, index) => (
             <div
               key={index}
@@ -199,4 +199,4 @@ const Programes = () => {
   );
 };
 
-export default Programes;
+export default Programmes;

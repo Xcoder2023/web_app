@@ -1,10 +1,9 @@
-import React from "react";
 import { FaRocket, FaBullseye } from "react-icons/fa";
 import { missionvission } from "../../../assets";
 
 const MissionVision = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center md:my-20 my-4 px-4 md:px-8 lg:px-24">
+    <div className="flex flex-col md:flex-row justify-between items-center md:my-20 my-10 px-4 md:px-8 lg:px-24">
       {/* Mission & Vision Section */}
       <div className="flex flex-col gap-8 w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
         {/* Mission Card */}
@@ -40,12 +39,12 @@ const MissionVision = () => {
       </div>
 
       {/* Image Section */}
-      <div className="relative w-full md:w-1/2 mt-8 md:mt-0">
+      <div className="relative w-full md:w-1/2 mt-12 mb-6 md:mb-0 md:mt-0">
         <div className="absolute inset-0 bg-[#0D183A] opacity-40 rounded-lg"></div>
         <img
           src={missionvission}
           alt="students image"
-          className="rounded-lg object-cover w-full h-full"
+          className="rounded-lg object-cover w-full h-[20rem] md:h-full"
         />
       </div>
     </div>

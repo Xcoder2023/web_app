@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Services = () => {
@@ -62,9 +62,11 @@ const Services = () => {
 
   return (
     <div className="flex flex-col px-4 md:px-8 lg:px-24 py-6 md:py-20 text-[#1a202c] space-y-6 md:space-y-10">
-       <div className="flex flex-col justify-center items-center">
-          <p className="text-center font-bold text-3xl xl:text-4xl">Our Services</p>
-          <div className="bg-teal-300 h-3 md:h-4 w-1/3 md:w-[8.5%] relative left-10 md:left-12 bottom-3 md:bottom-4 -z-10 rounded-sm"></div>
+      <div className="flex flex-col justify-center items-center">
+        <p className="text-center font-bold text-3xl xl:text-4xl">
+          Our Services
+        </p>
+        <div className="bg-teal-300 h-3 md:h-4 w-1/3 md:w-[8.5%] relative left-10 md:left-12 bottom-3 md:bottom-4 -z-10 rounded-sm"></div>
       </div>
       <div className="flex gap-4 md:gap-8 w-full mx-auto md:pb-10">
         <button
@@ -98,7 +100,9 @@ const Services = () => {
                 {/* Content Part */}
                 <div className="w-1/2 flex flex-col">
                   <h2 className="text-2xl font-bold mb-4">{slide.title}</h2>
-                  <p className="text-gray-700 xl:w-[80%] w-[70%]">{slide.content}</p>
+                  <p className="text-gray-700 xl:w-[80%] w-[70%]">
+                    {slide.content}
+                  </p>
                 </div>
 
                 {/* Image Part */}
