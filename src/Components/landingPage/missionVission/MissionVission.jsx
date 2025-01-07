@@ -4,6 +4,7 @@ import { missionvission } from "../../../assets";
 const MissionVision = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center md:my-20 my-10 px-4 md:px-8 lg:px-24">
+     
       {/* Mission & Vision Section */}
       <div className="flex flex-col gap-8 w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
         {/* Mission Card */}
