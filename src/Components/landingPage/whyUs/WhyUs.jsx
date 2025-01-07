@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import {useEffect} from "react";
 import { award, experts, firstaidbox, menstrualhealth1 } from "../../../assets";
 import "aos/dist/aos.css";
 import AOS from "aos";

@@ -61,3 +61,44 @@ export const achievements = [
     },
 ]
 
+export const plans = [
+    {
+      title: "Basic",
+      initialCost: "140 000",
+      cost: "100 000",
+      features: [
+        "Setting/Inspection of School Healing baby and First Aid Box.",
+        "Health talk/Health Education and Promotion.",
+        "Training of School Staff and Health prefects.",
+        "Distribution of I.E.C materials.",
+      ],
+      image: "/assets/eduPromotion.jpg",
+    },
+    {
+      title: "Classic",
+      initialCost: "250 000",
+      cost: "180 000",
+      features: [
+        "All basic plan",
+        "Access to Emergency Preparedness Session.",
+        "Access to Primary Medical Provider on request.",
+        "Dental and Visual Screening/Session.",
+      ],
+      image: "/assets/eduPromotion.jpg",
+    },
+    {
+      title: "Standard",
+      initialCost: "560 000",
+      cost: "400 000",
+      features: [
+        "All Classic Plans",
+        "Inspection of school environment and facilities using endorsed checklist",
+        "One(1) standby Primary Medical Provider 9am-2pm",
+        "Inspection of food vendor and stalls",
+        "Access to Annual School Health Fairs",
+        "Access to Termly Psychological Counseling Sessions",
+      ],
+      image: "/assets/eduPromotion.jpg",
+    },
+  ];
+
