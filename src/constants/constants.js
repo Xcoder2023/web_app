@@ -102,3 +102,25 @@ export const plans = [
     },
   ];
 
+  export const reasons = [
+    {
+        title: "Affordable Price",
+        desc: "Affordable Access to Quality Health resources",
+        icon: "/icons/funding.png",
+    },
+    {
+        title: "Professional Team",
+        desc: "Expertise from health and education professionals",
+        icon: "/icons/businessman.png",
+    },
+    {
+        title: "Health Programs",
+        desc: "Tailored health programs that meet school-specific needs.",
+        icon: "/icons/healthcare.png",
+    },
+    {
+        title: "Children Safety",
+        desc: "Proven impact on children’s safety and well-being.",
+        icon: "/icons/child-safety.png",
+    },
+  ]

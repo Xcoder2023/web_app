@@ -4,8 +4,8 @@ import { HeroPage } from "./heropage/HeroPage";
 import MissionVission from "./missionVission/MissionVission";
 import Services from "./services/Services";
 import ObjectivesSection from "./objectivesection/ObjectiveSection";
-import WhyUs from "./whyUs/WhyUs";
 import Pricing from "./pricing/page";
+import WhyChooseUs from "./whyChooseUs/page";
 
 export const LandingPage = () => {
   return (
@@ -16,7 +16,7 @@ export const LandingPage = () => {
       <ObjectivesSection />
       <Services />
       <Pricing />
-      <WhyUs />
+      <WhyChooseUs />
       <Footer />
     </>
   );
