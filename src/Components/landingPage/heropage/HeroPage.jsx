@@ -1,4 +1,4 @@
-ew-ruiopmport { IoMdArrowForward } from "react-icons/io";
+import { IoMdArrowForward } from "react-icons/io";
 
 export const HeroPage = () => {
   return (
