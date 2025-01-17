@@ -30,7 +30,7 @@ const AboutSection = () => {
             </p>
             <a
               href="/about-us"
-              className="md:mt-2 px-10 py-4 bg-slate-900 hover:bg-slate-950 hover:-translate-y-1 transition duration-75 ease-in-out text-gray-200 text-base font-semibold w-full md:w-fit rounded-xl"
+              className="flex items-center justify-center md:mt-2 px-10 py-4 bg-slate-900 hover:bg-slate-950 hover:-translate-y-1 transition duration-75 ease-in-out text-gray-200 text-base font-semibold w-full md:w-fit rounded-xl"
             >
               Learn More...
             </a>

@@ -21,7 +21,7 @@ export const HeroPage = () => {
             <a href="/contact" className="decoration-none">
               Contact Us
             </a>{" "}
-            <IoMdArrowForward className="ml-2" />q
+            <IoMdArrowForward className="ml-2" />
           </div>
         </div>
       </div>
