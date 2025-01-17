@@ -7,4 +7,13 @@ import menstrualhealth1 from "../assets/menstrualhealth1.jpg";
 import firstaidbox from "../assets/firstaidbox.jpg";
 import experts from "../assets/experts.jpg";
 
-export{brandlogo,women,missionvission,healthservice,award,menstrualhealth1,firstaidbox,experts}
+export {
+  brandlogo,
+  women,
+  missionvission,
+  healthservice,
+  award,
+  menstrualhealth1,
+  firstaidbox,
+  experts,
+};
