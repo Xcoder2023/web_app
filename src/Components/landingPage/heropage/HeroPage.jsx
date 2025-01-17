@@ -9,7 +9,7 @@ export const HeroPage = () => {
         <div className="absolute inset-0 bg-[#0D183A] opacity-45"></div>
 
         {/* Content */}
-        <div className="relative xl:w-[60%] mx-auto flex flex-col items-center gap-5  w-[90%]">
+        <div className="relative xl:w-[60%] mx-auto flex flex-col items-center gap-5 w-[90%]">
           <p className="text-center  xl:text-[48px] text-[28px]">
             <span className="">E</span>nsuring Every Child&apos;s Health &
             Safety in Schools

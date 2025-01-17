@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
           <div className="w-full md:w-1/2 relative">
             <img
               src="/images/serene/img8.jpg"
-              className="w-full h-[20rem] rounded-2xl"
+              className="w-full h-[20rem] md:h-[25rem] rounded-2xl object-cover"
             />
             <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
           </div>

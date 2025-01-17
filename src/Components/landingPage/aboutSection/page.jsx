@@ -39,7 +39,7 @@ const AboutSection = () => {
             <img
               src="/images/serene2.jpg"
               alt=""
-              className="object-cover h-[20rem] md:h-[27.5rem] w-full rounded-3xl"
+              className="object-cover h-[20rem] xl:h-[27.5rem]  w-full rounded-3xl"
             />
           </div>
         </div>
