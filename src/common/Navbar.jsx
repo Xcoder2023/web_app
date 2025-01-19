@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
-import  { useState } from "react";
+import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { brandlogo } from "../assets";
-
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +19,10 @@ const Navbar = () => {
     <nav className="flex items-center justify-between py-4 md:py-6 px-4 md:px-6 lg:px-24 bg-white shadow-md sticky top-0 z-10">
       {/* Logo */}
       <div className="flex items-center">
-        <img src={brandlogo} alt="" width={60} height={60}/>
-        <span className="">Serenescheal</span>
+        <img src={brandlogo} alt="" width={60} height={60} />
+        <span className="uppercase font-Lora font-bold text-base md:text-2xl">
+          Serenescheal
+        </span>
       </div>
 
       {/* Desktop Nav Items */}
