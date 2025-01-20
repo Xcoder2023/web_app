@@ -20,7 +20,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
         <img src={brandlogo} alt="" width={60} height={60} />
-        <span className="uppercase font-Lora font-bold text-base md:text-2xl">
+        <span className="uppercase font-Lora font-bold text-base md:text-2xl bg-gradient-to-r from-teal-500 via-red-500 to-blue-500 text-transparent bg-clip-text">
           Serenescheal
         </span>
       </div>
